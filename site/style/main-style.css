@@ -156,3 +156,15 @@ img {
     position: absolute;
     right: 175px;
 }
+
+footer{
+    position: absolute;
+    font-size: 15px;
+    color: gainsboro;
+    background: dimgray;
+    padding: 30px 30px;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
