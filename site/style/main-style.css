@@ -10,8 +10,14 @@ body {
     background: #d5d5d5;
 }
 
+.upper-header{
+    position: absolute;
+    z-index: 0;
+}
+
 input {
     display: none;
+    position: absolute;
 }
 
 input:checked ~ label .hamburguer {
@@ -28,12 +34,18 @@ input:checked ~ label .hamburguer::after{
     bottom: 0;
 }
 
+label{
+    position: absolute;
+    left: 100px;
+    z-index: 1;
+}
 .menu-icon {
-    background: #ffffff;
-    width: 80px;
-    height: 80px;
+    background: #575353;
+    position: absolute;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: 2px;
+    border: 1px;
     top: 25px;
     right: 25px;
 }
@@ -42,16 +54,17 @@ input:checked ~ label .hamburguer::after{
     transition: 0.3s ease-in-out;
     position: relative;
     display: block;
-    width: 45px;
-    height: 5px;
-    background: rgb(250, 41, 41);
-    top: 37px;
-    left: 17px;
+    width: 25px;
+    height: 4px;
+    background: rgb(0, 243, 61);
+    top: 17px;
+    left: 7px;
 }
+
 .hamburguer::before,
 .hamburguer::after {
     transition: 0.2s ease-in-out;
-    background: rgb(255, 41, 41);
+    background: rgb(0, 243, 61);
     width: 100%;
     height: 100%;
     display: block;
@@ -60,33 +73,86 @@ input:checked ~ label .hamburguer::after{
 }
 
 .hamburguer::before {
-    top: -15px;
+    top: -8px;
 
 }
 .hamburguer::after {
-    bottom: -15px;
-
+    bottom: -8px;
 }
 
 nav {
+    transition: 0.5s;
+    position: absolute;
     background-color: rgb(16, 16, 16, .5);
+    left: -400px;
     width: 400px;
     height: 100%;
 }
 
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(400px);
+    transition: 0.5s;
+}
+
 ul {
     list-style: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+.socialmedia {
+    padding: 25px 25px;
+    position: absolute;
+    top: 50px;
+    right: -25px;
+    background: rgb(48, 48, 54);
+    border-radius: 15%;
+}
+
+span{
+    position: relative;
+    z-index: 10;
+}
+p {
+    font-size: 24px;
+    color: #ffffff;
+    right: 10px;
+    top: 20px;
+}
+
+a {
+    text-decoration: 0;
+    color:rgb(255, 255, 255);
+    display: block;
+    padding: 20px 5px;
+}
+
+a:hover {
+    background-color: rgba(243, 41, 41, 0.774);
+    color: #000;
+
+}
+
+hr {
+    background-color: rgba(20, 20, 48, 0.692);
+    border: rgba(22, 22, 24, 0.788);
+    position: relative;
+    height: 3px;
+    width: 50%;
+    left: 10px;
 }
 
 .socialmedia {
     position: fixed;
 }
 
-a {
-    text-decoration: 0;
-    color:rgb(255, 255, 255)
+img {
+    height: 60px;
+    width: 60px;
 }
 
 .googlemaps {
-    position: fixed;
+    position: absolute;
+    right: 175px;
 }
