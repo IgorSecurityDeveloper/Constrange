@@ -160,20 +160,20 @@ img {
 
 img#services {
     align-items: center;
-    margin: 10px;
+    margin: 5px;
     position: relative;
     height: 400px;
     width: 500px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
-    transition: 1s;
+    transition: 1.2s;
 }
 
 img#services:hover{
-    transition: 1s;
-    height: 500px;
-    width: 600px;
+    transition: 0.7s;
+    height: 450px;
+    width: 550px;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     filter: none;
