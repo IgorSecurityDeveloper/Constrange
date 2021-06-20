@@ -19,6 +19,7 @@ body {
     background-color: #575353;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 header {
@@ -267,24 +268,25 @@ img#social {
     width: 100%;
     display: flex;
     position: relative;
-    margin: 0;
+    padding-left: 20px;
 }
 
 img#services {
     display: flex;
     position: relative;
-    height: 400px;
-    width: 500px;
+    height: 380px;
+    width: 480px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
     transition: 1.2s;
+    margin: auto;
 }
 
 img#services:hover{
     transition: 0.7s;
-    height: 410px;
-    width: 510px;
+    height: 400px;
+    width: 500px;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     filter: none;
@@ -297,6 +299,49 @@ a#services {
 a#services:hover{
     background-color: #d5d5d5;
     transform: translateY(-5px);
+}
+
+.description1, .description2, .description3{
+    font-family: cambria;
+    font-weight: bolder;
+    font-size: 30px;
+    height: 50px;
+    width: 280px;
+    padding-left: 10px;
+    padding-top: 7px;
+    margin-left: auto;
+    margin-top: 300px;
+    background-color: #000000b7;
+    position: absolute;
+    transition: 1s;
+    z-index: 1;
+}
+
+img#services:hover ~ .description1 {
+    background-color: #12F475;
+    color: #082e16;
+    transition: 0.5s;
+    padding-left: 110px;
+    width: 100%;
+    transform: translateX(0px) translateY(10px);
+}
+
+img#services:hover ~ .description2 {
+    background-color: #545555;
+    color: #ffffff;
+    transition: 0.5s;
+    padding-left: 120px;
+    width: 100%;
+    transform: translateX(0px) translateY(10px);
+}
+
+img#services:hover ~ .description3 {
+    background-color: #27e3fc;
+    color: #0c3b68;
+    transition: 0.5s;
+    padding-left: 150px;
+    width: 100%;
+    transform: translateX(0px) translateY(10px);
 }
 
 /* Submenu group */
