@@ -1,3 +1,5 @@
+/*General page*/
+
 *,
 *::before,
 *::after {
@@ -12,10 +14,8 @@ body {
     padding: 0;
 }
 
-.upper-header{
-    position: absolute;
-    z-index: 0;
-}
+/*left side menu*/
+
 div#menu{
     z-index: 1;
     position: absolute;
@@ -106,18 +106,24 @@ ul {
     width: 100%;
 }
 
+.menu_list {
+    background-color: rgba(20, 20, 48, 0.692);
+    border: rgba(22, 22, 24, 0.788);
+    position: relative;
+    height: 3px;
+    width: 50%;
+    left: 10px;
+}
+
+/*Right side social media menu*/
+
 .socialmedia {
     padding: 25px 25px;
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: -25px;
     background: rgb(48, 48, 54);
     border-radius: 23%;
-    z-index: 1;
-}
-
-span{
-    position: relative;
     z-index: 1;
 }
 
@@ -133,24 +139,13 @@ a {
     color:rgb(255, 255, 255);
     display: block;
     padding: 20px 5px;
+    transition: 1s;
 }
 
 a:hover {
     background-color: rgba(243, 41, 41, 0.774);
     color: #000;
-}
-
-hr {
-    background-color: rgba(20, 20, 48, 0.692);
-    border: rgba(22, 22, 24, 0.788);
-    position: relative;
-    height: 3px;
-    width: 50%;
-    left: 10px;
-}
-
-.socialmedia {
-    position: fixed;
+    transition: 0.5s;
 }
 
 img {
