@@ -8,11 +8,17 @@
 
 body {
     background: #d5d5d5;
+    margin: 0;
+    padding: 0;
 }
 
 .upper-header{
     position: absolute;
     z-index: 0;
+}
+div#menu{
+    z-index: 1;
+    position: absolute;
 }
 
 input {
@@ -37,17 +43,17 @@ input:checked ~ label .hamburguer::after{
 label{
     position: absolute;
     left: 100px;
-    z-index: 1;
 }
 .menu-icon {
     background: #575353;
-    position: absolute;
+    position: fixed;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 1px;
     top: 25px;
-    right: 25px;
+    left: 25px;
+    z-index: 2;
 }
 
 .hamburguer {
@@ -74,7 +80,6 @@ label{
 
 .hamburguer::before {
     top: -8px;
-
 }
 .hamburguer::after {
     bottom: -8px;
@@ -82,7 +87,7 @@ label{
 
 nav {
     transition: 0.5s;
-    position: absolute;
+    position: fixed;
     background-color: rgb(16, 16, 16, .5);
     left: -400px;
     width: 400px;
@@ -107,13 +112,15 @@ ul {
     top: 50px;
     right: -25px;
     background: rgb(48, 48, 54);
-    border-radius: 15%;
+    border-radius: 23%;
+    z-index: 1;
 }
 
 span{
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }
+
 p {
     font-size: 24px;
     color: #ffffff;
@@ -151,19 +158,51 @@ img {
     width: 60px;
 }
 
+img#services {
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    height: 400px;
+    width: 500px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    transition: 1s;
+}
+
+img#services:hover{
+    transition: 1s;
+    height: 500px;
+    width: 600px;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: none;
+}
+
+a#services {
+    padding: 40px;
+    left: 100px;
+    position: relative;
+    display: flex;
+    display: inline-block;
+}
+
 .googlemaps {
-    position: absolute;
-    right: 175px;
+    display: flex;
+    position: static;
+    align-items: flex-end;
+}
+
+iframe{
+    display: flexbox;
 }
 
 footer{
-    position: absolute;
+    position: relative;
     font-size: 15px;
     color: gainsboro;
     background: dimgray;
     padding: 30px 30px;
     width: 100%;
-    left: 0px;
     bottom: 0px;
-    z-index: 1;
 }
