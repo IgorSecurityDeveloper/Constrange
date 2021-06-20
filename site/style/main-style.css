@@ -231,8 +231,7 @@ input[name="s"]{
     position: fixed;
     top: 50px;
     right: -25px;
-    background: rgb(48, 48, 54);
-    border-radius: 23%;
+    background: rgba(48, 48, 54, 0.671);
     z-index: 2;
 }
 
