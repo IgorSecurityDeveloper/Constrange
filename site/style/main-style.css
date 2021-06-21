@@ -249,7 +249,7 @@ input[name="s"]{
 .socialmedia {
     padding: 25px 25px;
     position: fixed;
-    top: 50px;
+    top: 130px;
     right: -25px;
     background: rgba(48, 48, 54, 0.671);
     z-index: 2;
