@@ -172,7 +172,7 @@ ul {
     height: 1200px;
     overflow: hidden;
     position: relative;
-    top: 700px;
+    top: 800px;
   }
   .middle{
     position: relative;
@@ -184,7 +184,7 @@ ul {
     height: 40px;
     width: 100%;
     position: absolute;
-    bottom: 180px;
+    bottom: 240px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -240,7 +240,7 @@ ul {
       display: flex;
       z-index: 30;
       padding: 30px 30px;
-      bottom: 250px;
+      bottom: 300px;
   }
   
   #r1:checked ~ .s1{
@@ -315,8 +315,8 @@ img#services {
     filter: grayscale(100%);
     filter: gray;
     transition: 1.2s;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 img#services:hover{
@@ -345,7 +345,7 @@ a#services:hover{
     width: 280px;
     padding-left: 10px;
     padding-top: 7px;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-top: 300px;
     background-color: #000000b7;
     position: absolute;
