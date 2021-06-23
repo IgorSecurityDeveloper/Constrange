@@ -169,7 +169,7 @@ ul {
 
   .slidershow {
     width: 90%;
-    height: 900px;
+    height: 1200px;
     overflow: hidden;
     position: relative;
     top: 700px;
@@ -188,7 +188,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    padding-left: 500px;
+    padding-left: 650px;
   }
   .bar{
     width: 50px;
@@ -315,8 +315,8 @@ img#services {
     filter: grayscale(100%);
     filter: gray;
     transition: 1.2s;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 img#services:hover{
@@ -345,7 +345,7 @@ a#services:hover{
     width: 280px;
     padding-left: 10px;
     padding-top: 7px;
-    margin-left: 5px;
+    margin-left: 50px;
     margin-top: 300px;
     background-color: #000000b7;
     position: absolute;
@@ -404,7 +404,7 @@ p {
     display: flex;
     position: static;
     align-items: flex-end;
-    margin-left: 300px;
+    margin-left: 500px;
     margin-bottom: 50px;
 }
 
