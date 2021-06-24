@@ -37,7 +37,7 @@ h1 {
     font-size: 75px;
     font-family: 'Audiowide';
     color: #fff;
-    text-shadow: 5px 5px #363535;
+    text-shadow: 5px 5px 5px #000;
     z-index: 2;
 }
 
@@ -229,11 +229,14 @@ ul {
     padding-top: 100px;
     margin-bottom: 0;
     overflow: hidden;
+    box-shadow: 10px 10px 10px #000;
+    display: block;
   }
 
   .legend{
       background-color: #181818b2;
       font-family: 'Audiowide', cursive;
+      text-shadow: 5px 5px 5px #000;
       color: aliceblue;
       font-size: 34px;
       position: absolute;
@@ -422,6 +425,114 @@ footer{
     bottom: 0px;
 }
 
+/*---------orcamento------------*/
+
+.pagetitle {
+    margin-top: 250px;
+}
+.orcamentotitle {
+    padding-top: 0px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(88, 88, 88);
+    text-shadow: 5px 5px 5px #000;
+}
+.camp label {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    display: block;
+    margin-left: 620px;
+    float: left;
+}
+
+.whatsapp {
+    top: 350px;
+    height: 150px;
+    width: 45%;
+    color: #ffffff;
+    display: block;
+}
+
+.form {
+    padding-top: 80px;
+}
+
+form {
+    margin-left: 10%;
+    height: 900px;
+    width: 80%;
+    background: rgb(59, 59, 59);
+    box-shadow: 20px 20px 20px #000;
+    text-align: center;
+    font-family: 'Audiowide';
+    position: relative;
+    padding-bottom: 100px;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+input, select, textarea, button {
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: #1d0303;
+    box-shadow: 3px 3px 3px #000;
+}
+
+h2 {
+    font-size: 30px;
+    text-shadow: 5px 5px 5px #000;
+    text-align: center;
+    margin-left: -200px;
+}
+textarea{
+    margin-top: 50px;
+    height: 300px;
+    width: 1000px;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+.submit_content {
+    font-size: 30px;
+    background: #9d4242;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 1s;
+}
+
+ .submit_content:hover {
+    background: #e42020;
+    box-shadow: 0 0 20px rgb(235, 0, 0),
+                0 0 40px rgb(235, 0, 0),
+                0 0 60px rgb(235, 0, 0);
+    text-shadow: none;
+    transition: 0.2s;
+}
 
 
 
