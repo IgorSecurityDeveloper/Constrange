@@ -448,11 +448,11 @@ footer{
 }
 
 .whatsapp {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    top: 350px;
+    height: 150px;
+    width: 45%;
     color: #ffffff;
     display: block;
-    margin-left: 1820px;
 }
 
 .form {
@@ -480,7 +480,14 @@ input, select, textarea, button {
     box-shadow: 3px 3px 3px #000;
 }
 
+h2 {
+    font-size: 30px;
+    text-shadow: 5px 5px 5px #000;
+    text-align: center;
+    margin-left: -200px;
+}
 textarea{
+    margin-top: 50px;
     height: 300px;
     width: 1000px;
 }
@@ -515,12 +522,16 @@ textarea{
     margin-right: -50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    transition: 1s;
 }
 
  .submit_content:hover {
     background: #e42020;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgb(235, 0, 0),
+                0 0 40px rgb(235, 0, 0),
+                0 0 60px rgb(235, 0, 0);
     text-shadow: none;
+    transition: 0.2s;
 }
 
 
