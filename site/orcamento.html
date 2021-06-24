@@ -56,31 +56,60 @@
 
     <!--********** BUDGET FORM **********-->
 
-    <div class="orcamentotitle"><h1>- Descreva o tipo de serviço -</h1>
-    <h3>Nossa equipe entrará em contato</h3></div>
 
-    <form>
+    <h1 class="pagetitle">- Descreva o tipo de serviço -</h1>
+
+    <div class="form">
+    <form method="POST" function=""> <!--Aplicar javascript para enviar dados ao constrangeDB-->
+
+        <!-- Client info -->
+
+        <div class="orcamentotitle">
+            <h3>Nossa equipe entrará em contato</h3></div>
+
     <div class="camp">
         <label for="nome">NOME: </label>
         <input type="text" name="nome" id="nome" required>
     </div>
+
     <div class="camp">
         <label for="email">Email: </label>
         <input type="email" name="email" id="email">
     </div>
+
+    <!-- Telephones -->
+
     <div class="camp">
-        <label for="whatsapp">Esse número tem Whatsapp?</label>
-        <input type="checkbox" name="Whatsapp" id="chec_whatsapp">
-        <label for="tel1">Tel 1</label>
-        <input type="tel" name="tel1" id="tel1">
-        <label for="whatsapp">Esse número tem Whatsapp?</label>
-        <input type="checkbox" name="Whatsapp" id="chec_whatsapp">
+       
+        <label for="tel1" class="whatsapp">Tel 1</label>
+        <input type="tel" name="tel1" id="tel1" required>
+
+        <label for="whatsapp" class="whatsapp">Esse número tem Whatsapp?</label>
+        <input type="checkbox" name="Whatsapp">
+        
+    </div>
+    
+    <div class="camp">
+
         <label for="tel2">Tel 2</label>
         <input type="tel" name="tel2" id="tel2">
+
+        <label for="whatsapp">Esse número tem Whatsapp?</label>
+        <input type="checkbox" name="Whatsapp">
+
     </div>
-    <div class="camp"></div> <!--Parei aqui, continuar com formulário-->
+
+    <!-- Details from job -->
+
+    <div class="camp">
+        <label for="caixadetexto"><h2>Conte detalhes do que precisa!</h2></label>
+        <textarea id="caixadetexto" type="text" placeholder="Escreva aqui..."></textarea>  
+    </div> 
  
+    <button class="submit_content" type="submit">Concluir</button>
     </form>
+
+</div>
     <!--********** SERVICES BOXES IN THE BOTTOM **********-->
 
     <div class="services_options">
